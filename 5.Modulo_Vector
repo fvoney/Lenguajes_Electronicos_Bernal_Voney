@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdio_ext.h>
+float modulo_vector(float real, float imag);
+int main(){
+  float real, imag;
+  modulo_vector(real, imag);
+  return 0;
+}
+float modulo_vector(float real, float imag){
+  float modulo;
+  printf("ingrese el valor de su múmero real \n");
+  __fpurge(stdin);
+  scanf("%f",&real);
+  printf("ingrese el valor de su número imaginario\n");
+  __fpurge(stdin);
+  scanf("%f", &imag);
+  modulo=sqrt((real*real)+(imag*imag));
+  printf("el modulo de su vector es: %f", modulo);
+}
