@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main(){
+    int min, max;
+    int j;
+    int vec[10];
+    
+    srand(time(NULL));
+    printf("Por favor ingrese el valor mínimo:\n");
+    scanf("%d", &min);
+    printf("Por favor ingrese el valor máximo:\n");
+    scanf("%d", &max);
+    for (j=0;j<10;j++){
+        do{
+            vec[j]=rand() % max;
+            if (vec[j]==min)vec[j]++;
+        }
+        while(vec[j]<min);{
+    printf("El valor del vector %d es de: %d\n", j, vec[j]);
+    }
+  }
+}
