@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+int main(){
+    char palabra[40];
+    int j=0;
+    int letras=0;
+    
+    printf("Ingrese una palabra\n");
+    scanf("%s",palabra);
+    while(palabra[j] != '\0'){
+        letras++;
+        j++;
+    }
+    printf("La cantidad de letras es: %d", letras);    
+    return 0;
+}
