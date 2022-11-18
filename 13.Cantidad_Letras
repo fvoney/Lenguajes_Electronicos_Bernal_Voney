@@ -1,16 +1,12 @@
 #include <stdio.h>
-#include <string.h>
 int main(){
-    char palabra[40];
+    char palabra[30];
     int j=0;
     int letras=0;
     
-    printf("Ingrese una palabra\n");
+    printf("Por favor, ingrese una palabra para saber cuantos caracteres posee.\n");
     scanf("%s",palabra);
-    while(palabra[j] != '\0'){
-        letras++;
-        j++;
-    }
-    printf("La cantidad de letras es: %d", letras);    
+    while(palabra[j++] != '\0')letras++;
+    printf("La palabra que ingreso posee %d caracteres.", letras);    
     return 0;
 }
