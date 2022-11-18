@@ -1,0 +1,34 @@
+#include <stdio.h>
+int main(){
+    char caracteres[20];
+    int a=0, e=0, i=0, o=0, u=0;
+    int j=0;
+    printf("Por favor ingrese hasta 20 caracteres para saber la cantidad de vocales que posee:\n");
+    scanf("%s",caracteres);
+    
+    for(caracteres[j]; j<20; j++){
+        switch(caracteres[j]){
+            case 'a':
+                a++;
+                break;
+            case 'e':
+                e++;
+                break;
+            case 'i':
+                i++;
+                break;
+            case 'o':
+                o++;
+                break;
+            case 'u':
+                u++;
+                break;
+        }
+    }
+    printf("Lo que ingresaste posee:\n %d letras a", a);
+    printf("\n %d letras e", e);
+    printf("\n %d letras i", i);
+    printf("\n %d letras o", o);
+    printf("\n %d letras u", u);
+    return 0;
+}
