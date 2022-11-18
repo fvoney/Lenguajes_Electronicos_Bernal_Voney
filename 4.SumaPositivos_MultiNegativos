@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main(){
+  char suma=0, multi=1;
+  int n;
+  printf("Por favor ingrese 10 numeros \n");  
+  for (char i=0; i<10; i++){
+    do{
+      printf("tienen que ser distintos de cero \n");  
+      scanf("%d", &n);
+    }while(n==0);
+  if (n>0){
+    suma +=n;
+  } else{
+    multi*=n;
+  }
+}
+printf("El resultado de la suma es: %d", suma);
+printf("\n El resultado de la multiplicion es: %d", multi);
+return 0;
+}
