@@ -1,13 +1,13 @@
 #include <stdio.h>
-int main(void){
+int main(){
     int var;
     int i, j, valores[10];
-   
-    printf("ingrese 10 valores para que sean ordenados de mayor a menor:\n");
+    
+    printf("Por favor ingrese 10 valores para que sean ordenados de mayor a menor:\n");
     for(i=0;i<10;i++){
        scanf("%d", &valores[i]);
-   }
-   for(i=0;i<10;i++){
+    }
+    for(i=0;i<10;i++){
         for(j=0;j<10;j++){
             if (valores[i]>valores[j]){
                 int var= valores[i];
@@ -16,9 +16,9 @@ int main(void){
             }
         }
     }
-   printf("el orden de mayor a menor es:\n");
-   for(i=0;i<=9;i++) {
+    printf("El orden de mayor a menor es:\n");
+    for(i=0;i<=9;i++) {
         printf("%d\n", valores[i]);
-   }
-   return 0;
+    }
+    return 0;
 }
